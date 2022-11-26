@@ -44,7 +44,7 @@ public class CRUDproveedores extends ConectarBD{
     
     public void InsertarRegistroProveedor(Proveedores p){
         try {
-           ps=conexion.prepareStatement("INSERT INTO proveedores (dni,nombreape,telefono,correo,indicador) VALUES (?,?,?,?',?);");
+           ps=conexion.prepareStatement("INSERT INTO proveedores (dni,nombreape,telefono,correo,indicador) VALUES (?,?,?,?,'s');");
            ps.setString(1, p.getDni());
            ps.setString(2, p.getNombres());
            ps.setString(3, p.getTelefono());
